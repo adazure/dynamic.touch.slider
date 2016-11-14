@@ -1,0 +1,49 @@
+div.touchslider,div.touchslider *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;    
+    position: relative;    
+}
+
+div.touchslider{
+    overflow:hidden;
+}
+
+div.touchslider-context{
+    display: table;
+    transition: left .5s cubic-bezier(0.34, 0.79, 1, 1);
+}
+
+div.touchslider-context > div{
+    margin: 0;
+    display: table-cell;
+    height: 200px;
+    background: #333;
+    border: 2px solid #fff;
+}
+div.tc{
+    color:white;
+    position: relative;
+}
+div.tc>div{
+    
+position: absolute;
+    
+left: 50%;
+    
+top: 50%;
+    
+transform: translate(-50%,-50%);
+    
+width: 80%;
+    
+font-size: 12px;
+    
+font-family: sans-serif;
+    
+text-align: justify;
+}
+
+.disabled{
+    pointer-events: none;
+    opacity: 0.4;
+}
